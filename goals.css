@@ -145,6 +145,7 @@ body {
 
 .text {
     text-align: justify;
+    word-spacing: -5px;
     color: white;
     margin-left: 5vw;
     margin-right: 4vw;
