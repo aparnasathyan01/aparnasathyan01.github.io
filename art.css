@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+body {
+    margin:0;
+    padding:0;
+    height:100vh;
+    background-color: black;
+    position: absolute;
+  }
+
+.ham-bar{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30% 0 0 40%;
+    transition: right .5s cubic-bezier(1,0,0,1);
+}
+
+.change{
+    right: 0px;
+}
+
+.hamburger-menu{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 53, 228);
+    transition: all 0.3s;
+}
+
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2{
+    opacity: 0;
+}
+.change .line-3{
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.ham-list{
+    text-align: right;
+}
+
+.ham-item{
+    list-style: none;
+    margin: 25px;
+}
+
+.ham-link{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight:300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.ham-link::before,
+.ham-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 53, 228);
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.ham-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.ham-link::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.ham-link:hover::before,
+.ham-link:hover::after{
+    transform: scaleX(1);
+}
+
+#particles-js{
+    opacity: 0.70;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 0;
+}
+  
+.heading {
+    color: white;
+    position: relative;
+    margin-left: 40vw;
+    font-size: 3vw;
+    margin-top: -0.5vw;
+    text-transform: uppercase;
+}
+
+.line1 {
+    width: 12vw;
+    height: 0.3vw;
+    background-color: rgb(255, 53, 228);
+    margin-top: 2vw;
+    position: relative;
+    margin-left: 46.5vw;
+}
+
+.line2 {
+    width: 12vw;
+    height: 0.3vw;
+    background-color: rgb(255, 53, 228);
+    position: relative;
+    margin-left: 40vw;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    position: relative;
+  }
+
+.column {
+    opacity: 0.95;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-top: 1vw;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+.more{
+    display: inline-block;
+    margin-top: 3.5vw;
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+
+.icon {
+    display: inline-block;
+    float: right;
+    margin-right: 1.5vw;
+    margin-top: 3.8vw;
+    text-decoration: none;
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 53, 228);
+    size: 5vw;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+      margin-top: 3vw;
+    }
+
+    .heading {
+        color: white;
+        position: relative;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        font-size: 4vw;
+        text-transform: uppercase;
+    }
+    
+    .line1 {
+        width: 16vw;
+        height: 0.5vw;
+        background-color: rgb(255, 53, 228);
+        margin-top: 14vw;
+        position: relative;
+        margin-left: 14vw;
+    }
+    
+    .line2 {
+        width: 16vw;
+        height: 0.5vw;
+        background-color: rgb(255, 53, 228);
+        margin-top: 0.5vw;
+        position: relative;
+        margin-left: 5vw;
+    }
+    
+    .more{
+        display: inline-block;
+        margin-top: 6vw;
+        margin-left: 4vw;
+        font-size: 3vw;
+    }
+    
+    .icon {
+        display: inline-block;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 7vw;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+  }
+  
