@@ -1,4 +1,2 @@
-"#My-Portfolio" 
-"#aparnasathyan01.github.io"
-"# aparnasathyan01.github.io" 
-"# aparnasathyan01.github.io" 
+# My-Portfolio
+## aparnasathyan01.github.io
